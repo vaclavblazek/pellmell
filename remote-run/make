@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if rrun.sh check; then
+    rrun.sh run make "$@"
+else
+    /usr/bin/make "$@"
+fi
